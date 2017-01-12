@@ -1,0 +1,107 @@
+body {
+	margin: 0;
+}
+
+.weighing-balance-main-container {
+	float: left;
+	width: 100%;
+	border: none !important;
+	height: 1000px;
+}
+
+.meter-needle-main {
+	float: left;
+	width: 100%;
+	display:none;
+}
+
+.meter-needle {
+	z-index: 1000;
+	position: absolute;
+	left: 200px;
+	top: 200px;
+}
+
+.weighing-panel-outer {
+	position: relative;
+	float: left;
+	height: 1px;
+	width: 100%;
+	border-bottom: 2px solid #7e7a7a;
+}
+
+.weighing-panel-stands {
+	position: absolute;
+	float: left;
+	top: -15px;
+	border-left: 4px solid #7e7a7a;
+}
+
+.weighing-panel-stands-circle {
+	float: left;
+	width: 18px;
+	position: relative;
+	height: 18px;
+	left: -11px;
+	top: -14px;
+	background: #7e7a7a;
+	border-radius: 50%;
+}
+
+.weighing-container {
+	width: 100px;
+	height: 23px;
+	top: -9px;
+	left: -41px;
+	position: absolute;
+	z-index: 100;
+	background: url(../images/stand.png) no-repeat bottom center;
+}
+
+.weighing-container-plate {
+	width: 100%;
+	top: -9px;
+	height: 8px;
+	background: transparent;
+	position: relative;
+	border-bottom: 2px solid #7e7a7a;
+	border-right: 2px solid #7e7a7a;
+	border-left: 2px solid #7e7a7a;
+}
+
+#container-up {
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	border: none;
+}
+
+#container-down {
+	z-index: 998;
+	position: relative;
+	width: 100%;
+	border: none;
+}
+
+.triangle {
+	z-index: 999;
+	width: 0;
+	height: 0;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 35px solid #7e7a7a;
+	position: absolute;
+	display:none;
+}
+
+.rectangle {
+	z-index: 999;
+	font-size: 13px;
+	padding: 5px;
+	min-height: 20px;
+	position: relative;
+	min-width: 150px;
+	border: 1px solid #7e7a7a;
+	text-align: center;
+	line-height: 20px;
+}
